@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block title %}about{% endblock %}
+    
+{% block body %}
+    <div class="row">
+        <div class="column">
+            <h1>syfte</h1>
+            <p>
+                kunna redogöra för utveckling med objektorienterad programmering och databaser i webbmiljö,
+                självständigt, utefter en specifikation, kunna utveckla och driftsätta en webbapplikation där
+                objektorienterad programmering i ramverk tillsammans med databaser har en central roll.
+                översiktligt förstå, kunna förklara samt argumentera kring objektorienterad programmering
+                i ett webbaserat ramverk.
+            </p>
+        </div>
+        <div class="column">
+            <h1>github</h1>
+            <a><img src="{{ asset('img/hot.jpg') }}" alt="computer" width="200"></a>
+            <a href="https://github.com/dbwebb-se/mvc">till kursrepo</a>
+            <a href="https://github.com/torl23">till min github</a>
+        </div>
+    </div>
+{% endblock %}
