@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block title %}card deck{% endblock %}
+
+{% block body %}
+    <h2>Cards Left: {{ left }}</h2>
+    <p>Draw a card by typing a number in the url or with the input</p>
+    {% for card in drawnCards %}
+        <p>You got: {{ card }}</p>
+    {% endfor %}
+
+    <form method="post" action="{{ path('cardDraw') }}">
+        <input type="number" name="num_cards" min="1" max="52" value="1">
+        <input type="submit" name="do_it" value="draw cards">
+    </form>
+{% endblock %}

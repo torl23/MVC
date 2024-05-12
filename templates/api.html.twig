@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}api{% endblock %}
+
+{% block body %}
+    <h1>JSON</h1>
+    <a href="http://localhost:8888/api/quote">JSON</a>
+
+    <p>shows the deck in order</p>
+    <a href="{{ path('api_deck')}}">show the deck</a>
+
+    <p>shuffels the deck </p>
+    <form action="/api/deck/shuffle" method="post">
+        <button type="submit">Shuffle Deck</button>
+    </form>
+
+    <p>draw any number of cards from the deck but not more then their is </p>
+    <form method="post" action="/api/deck/draw">
+        <input type="number" name="api_num_cards" min="1" max="52" value="1">
+        <input type="submit" name="do_it" value="draw cards">
+    </form>
+
+    <p>draw 5 cards from the deck</p>
+    <a href="{{ path('apiCardDraw', {numCard: 5}) }}">draw 5 cards</a>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "base.html.twig" %}
+
+{% block title %}raport{% endblock %}
+
+{% block body %}
+    <h1 id="kmom01">kmom01</h1>
+    <p>
+        jag har inte jätte stor kunskap om hur man använder objektorientering.
+        och minna tidigare erfarenheter är ganska svaga för jag inte klart
+        tidigare kurs med objektorientering.
+        En klass används för att skapa objekt med properties och metoder.
+        Objekt är instanser av klasser. De representerar specifika
+        enheter med sina egna egenskaper och beteenden.
+        properties är variabler som håller data i klasser eller objekt.
+        Dem definierar vad som är i klassen eller objektet.
+        Jag uppfattar koden i me/report att vara lite komplicerande när man
+        kan gå mellan så många olika filer.
+        Jag tycker att namespacing är intressant, att man kan använda samma
+        namn till olika grejor. Så att om man ger över kod till andra och koden
+        fungerar även om man skulle haft samma namn på olika klasser. 
+        Jag tycker också det är intressant med att man har en built-in web server
+        med php.
+        Mitt TIL för detta kmom är en liten förståelse hur man använder Symfony.
+    </p>
+    <h1 id="kmom02">kmom02</h1>
+    <p>
+        en klass är en mall för att skapa ett objekt. 
+        klassen definierar egenskaper som objekt kommer ha som variabler och funktioner. 
+        Arv tillåter en klass att ärva egenskaper och metoder från en annan klass.
+        När en klass ärver ifrån en annan klass innebär att den nya klassen får alla
+        egenskaper och metoder från den ursprungliga klassen. <br>
+        Komposition innebär att en klass innehåller en eller flera instanser av
+        andra klasser som medlemmar. istället för att ärva alla egenskaper ifrån en annan klass
+        skapar vi en ny klass. Exempel: om vi har en klass bil och en klass motor så kan vi
+        använda en komposition för att skapa en bil som innehåller en motor. <br>
+        Ett interface är en samling av metoder som definierar ett kontrakt för
+        klasser som implementerar det. Det anger vilka metoder en klass måste tillhandahålla.
+        Ett trait är en metod som är återanvändbara och kan inkluderas i en eller flera klasser. <br><br>
+
+        Jag började med att dela upp uppgiften i olika delar och startade med att göra
+        card klassen som visar upp specifika kort. Sen skapade jag en deck klass som
+        ärver ifrån card som då skapar hela kortleken. Sedan skapade jag routen för varje
+        krav och implementerade dem specifika kraven till den routen. jag är inte nöjd med
+        min koden jag har skrivet och om jag hade gjort om uppgiften hade jag förbättrat 
+        hur kortleken skapas och hämtat i sessionen. <br><br>
+
+        jag tycker det är svårt att jobba med Symfony och MVC.<br><br>
+
+        Mitt TIL för detta kmom är en bättre förståelse hur man använder sig av sessioner.
+    </p>
+
+{% endblock %}
